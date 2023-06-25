@@ -10,10 +10,34 @@
 }
 
 .todoFormContainer input {
-  width: 45%;
+  width: 64%;
   height: 30px;
   font-size: 1.3rem;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
+}
+
+@media (max-width: 753px) {
+  .todoFormContainer form {
+    display: block;
+    row-gap: 10px;
+    min-width: 200px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .todoFormContainer input {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+
+  .todoFormContainer button {
+    height: 57px;
+    font-size: 1.3rem;
+    padding: 9px 53px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 14px;
+  }
 }
